@@ -4,7 +4,7 @@
   "description": "realtime trend semantics",
   "main": "index.js",
   "scripts": {
-    "commit": "npx git-cz",
+    "commit": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
@@ -26,9 +26,15 @@
   },
   "devDependencies": {
     "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.9.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
     "prettier": "^1.15.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
